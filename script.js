@@ -1,4 +1,6 @@
 // Author: John Paul Antonovich
+let symbols;
+
 function getSymbols() {
 	let symbolFile = new XMLHttpRequest();
 	symbolFile.open("GET", "symbols.txt", true);
@@ -6,10 +8,14 @@ function getSymbols() {
 		if (symbolFile.readyState === 4) {
 			if (symbolFile.status === 200 || symbolFile.status == 0) {
 				let symbolText = symbolFile.responseText;
-				alert(symbolText);
+				symbols = symbolText;
 			}			
 		}
 	}
 	symbolFile.send(null);
+}
+
+window.onload = function () {
+	getSymbols();
 }
 
