@@ -17,7 +17,7 @@ function getSymbols() {
 }
 
 symbolSearchBar.addEventListener("keyup", function (event) {
-	console.log('fadsfjadsf');
+	console.log(symbols);
 
 
 }, false);
