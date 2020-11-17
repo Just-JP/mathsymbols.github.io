@@ -1,5 +1,6 @@
 // Author: John Paul Antonovich
 let symbols;
+let symbolSearchBar = document.getElementById("symbolSearch");
 
 function getSymbols() {
 	let symbolFile = new XMLHttpRequest();
@@ -15,10 +16,13 @@ function getSymbols() {
 	symbolFile.send(null);
 }
 
-function searchSymbols() {
-	alert('You are searching');
-}
+symbolSearchBar.addEventListener("keyup", function (event) {
+	console.log('fadsfjadsf');
+
+
+}, false);
 
 window.onload = function () {
 	getSymbols();
+	console.log(symbols)
 }
