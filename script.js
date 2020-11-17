@@ -15,7 +15,10 @@ function getSymbols() {
 	symbolFile.send(null);
 }
 
+function searchSymbols() {
+	alert('You are searching');
+}
+
 window.onload = function () {
 	getSymbols();
 }
-
