@@ -2,7 +2,7 @@
 let symbols;
 let symbolSearchBar = document.getElementById("symbolSearch");
 let mainForm = document.getElementById("mainForm");
-let symbolList = document.getElemetnById("symbols");
+let symbolList = document.getElementById("symbols");
 
 function getSymbols() {
 	let symbolFile = new XMLHttpRequest();
