@@ -21,7 +21,7 @@ function getSymbols() {
 
 mainForm.addEventListener("submit", function (event) {
 	event.preventDefault();
-	searchText = symbolSearchBar.value;
+	let searchText = symbolSearchBar.value;
 
 	for (let i = 0; i < symbols.length; i++) {
 		if (symbols[i].search(searchText) != -1 && searchText != "") {
