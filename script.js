@@ -1,6 +1,8 @@
 // Author: John Paul Antonovich
 let symbols;
 let symbolSearchBar = document.getElementById("symbolSearch");
+let mainForm = document.getElementById("mainForm");
+let symbolList = document.getElemetnById("symbols");
 
 function getSymbols() {
 	let symbolFile = new XMLHttpRequest();
@@ -9,16 +11,22 @@ function getSymbols() {
 		if (symbolFile.readyState === 4) {
 			if (symbolFile.status === 200 || symbolFile.status == 0) {
 				let symbolText = symbolFile.responseText;
-				symbols = symbolText;
+				symbols = symbolText.split("\n");
 			}			
 		}
 	}
 	symbolFile.send(null);
 }
 
-symbolSearchBar.addEventListener("keyup", function (event) {
-	console.log(symbols);
+mainForm.addEventListener("submit", function (event) {
+	event.preventDefault();
 
+	for (i; i < symbols.length(); i++)
+	{
+		if (symbols[i].search(symbolSerachBar.innerText)) {
+			console.log("fadsfadsf");
+		}
+	}
 
 }, false);
 
