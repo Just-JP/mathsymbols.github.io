@@ -21,7 +21,7 @@ function getSymbols() {
 mainForm.addEventListener("submit", function (event) {
 	event.preventDefault();
 
-	for (i; i < symbols.length(); i++)
+	for (let i; i < symbols.length(); i++)
 	{
 		if (symbols[i].search(symbolSerachBar.innerText)) {
 			console.log("fadsfadsf");
