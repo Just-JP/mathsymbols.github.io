@@ -22,7 +22,7 @@ mainForm.addEventListener("submit", function (event) {
 	event.preventDefault();
 
 	for (let i; i < symbols.length; i++) {
-		if (symbols[i].search(symbolSearchBar.innerText)) {
+		if (symbols[i].search(symbolSearchBar.value)) {
 			console.log("fadsfadsf");
 		}
 	}
