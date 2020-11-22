@@ -1,25 +1,25 @@
-degree: °
-greater than: >
-less than: <
-greater than or equal to: ≥
-less than or equal to: ≤
-triangle shape: Δ
-similarity: ~
-congruent to: ≅
-not equal to: ≠
-approximately equal: ≈
-plus and minus: ±
-division sign: ÷
-multiplication dot: ⋅
-angle: ∠
-perpendicular: ⊥
-parallel: ∥
-pi: π
-delta: ∆
-sigma: ∑
-e constant: e
-intersection: ∩
-union: ∪
-implies: ⇒
-equivalent: ↔
-infinity: ∞
+degree symbol: °
+greater than symbol: >
+less than symbol: <
+greater than or equal to symbol: ≥
+less than or equal to symbol: ≤
+triangle shape symbol: Δ
+similarity symbol: ~
+congruent to symbol: ≅
+not equal to symbol: ≠
+approximately equal symbol: ≈
+plus and minus symbol: ±
+division sign symbol: ÷
+multiplication dot symbol: ⋅
+angle symbol: ∠
+perpendicular symbol: ⊥
+parallel symbol: ∥
+pi symbol: π
+delta symbol: ∆
+sigma symbol: ∑
+e constant symbol: e
+intersection symbol: ∩
+union symbol: ∪
+implies symbol: ⇒
+equivalent symbol: ↔
+infinity symbol: ∞
