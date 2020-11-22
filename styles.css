@@ -3,6 +3,13 @@
 	font-family: sans-serif;
 }
 
-.mainTitle {
+#topPart {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+}
 
+#symbols li {
+	list-style-type: none;
+	padding-left: 0;
 }

@@ -30,7 +30,7 @@ mainForm.addEventListener("submit", function (event) {
 
 
 	for (let i = 0; i < symbols.length; i++) {
-		if (symbols[i].search(searchText) != -1 && searchText != "") {
+		if (symbols[i].toLowerCase().search(searchText.toLowerCase()) != -1 && searchText != "") {
 			let newListItem = document.createElement("li");
 			let node = document.createTextNode(symbols[i]);
 			newListItem.appendChild(node);
