@@ -1,4 +1,5 @@
 // Author: John Paul Antonovich
+
 "use strict";
 let symbols;
 let symbolSearchBar = document.getElementById("symbolSearch");
@@ -23,9 +24,15 @@ mainForm.addEventListener("submit", function (event) {
 	event.preventDefault();
 	let searchText = symbolSearchBar.value;
 
+	symbolList.innerHTML = "";
+
+
 	for (let i = 0; i < symbols.length; i++) {
 		if (symbols[i].search(searchText) != -1 && searchText != "") {
-			console.log("fadsfadsf");
+			let newListItem = document.createElement("li");
+			let node = document.createTextNode(symbols[i]);
+			newListItem.appendChild(node);
+			symbolList.appendChild(newListItem);	
 		}
 	}
 
