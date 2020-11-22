@@ -1,4 +1,25 @@
 degree: °
-adsfadsf
-adsfadf
-asdf
+greater than: >
+less than: <
+greater than or equal to: ≥
+less than or equal to: ≤
+triangle shape: Δ
+similarity: ~
+congruent to: ≅
+not equal to: ≠
+approximately equal: ≈
+plus and minus: ±
+division sign: ÷
+multiplication dot: ⋅
+angle: ∠
+perpendicular: ⊥
+parallel: ∥
+pi: π
+delta: ∆
+sigma: ∑
+e constant: e
+intersection: ∩
+union: ∪
+implies: ⇒
+equivalent: ↔
+infinity: ∞

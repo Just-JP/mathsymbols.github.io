@@ -5,6 +5,7 @@ let symbols;
 let symbolSearchBar = document.getElementById("symbolSearch");
 let mainForm = document.getElementById("mainForm");
 let symbolList = document.getElementById("symbols");
+let noResultText = document.getElementById("noResultText");
 
 function getSymbols() {
 	let symbolFile = new XMLHttpRequest();
@@ -25,6 +26,7 @@ mainForm.addEventListener("submit", function (event) {
 	let searchText = symbolSearchBar.value;
 
 	symbolList.innerHTML = "";
+	noResultText.innerText = "";
 
 
 	for (let i = 0; i < symbols.length; i++) {
@@ -36,9 +38,13 @@ mainForm.addEventListener("submit", function (event) {
 		}
 	}
 
+	if (symbolList.innerHTML == false) {
+		noResultText.innerText = "Looks like your search found nothing";
+	}
+
 }, false);
 
 window.onload = function () {
 	getSymbols();
-	console.log(symbols)
+	console.log(symbols);
 }
